@@ -1,61 +1,18 @@
 ---
 layout: default
-title: Home
 ---
 
-{% if page.url == "/" %}
-
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="container">
+      <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
+      <h1>end2end <small>v2.0</small></h1>
+      <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+      <h3>{{ site.author.bio }}</h3>
+      <a href="{{ '/about' | prepend: site.baseurl }}" class="button button-ghost" title="about">about</a>
+      <a href="{{ '/blog' | prepend: site.baseurl }}" class="button button-ghost" title="blog">blog</a>
+      <a href="{{ site.repo }}/archive/master.zip" class="button button-ghost" title="Download">Download</a>
+      {% include social.html %}
     </div>
-    <div class="row">
-        
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-        
-    </div>
+  </div>
 </section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-    
-    <div class="section-title">
-        
-        <h2><span>All Stories</span></h2>
-        
-    </div>
-    
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-               {% include postbox.html %}          
-
-        {% endfor %}
-        
-    </div>
-    
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
