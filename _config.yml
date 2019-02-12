@@ -3,11 +3,10 @@ title: *oldborn
 email: s.safak.topcu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A Wild Developer, Rurouini Academician, Game Designer Wannabe, Vegetarian.
-baseurl:  # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
+baseurl: ''
+url:  ''
 twitter_username: ssafaktopcu
-github_username:  oldborn
-# instagram_username: _safaktopcu
+github_username: oldborn
 
 # Build settings
 markdown: kramdown
