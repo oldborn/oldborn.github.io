@@ -19,9 +19,12 @@ paginate_path: "/blog/page:num/"
 
 
 collections:
+  pet-projects:
+    output: true
+    permalink: /pet-projects/:path/
+  games:
+    output: true
+    permalink: /games/:path/
   portfolio:
     output: true
     permalink: /portfolio/:path/
-  poetry:
-    output: true
-    permalink: /poetry/:path/

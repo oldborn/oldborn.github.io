@@ -211,11 +211,9 @@ height: 230px;
 overflow: hidden;
 }
 .thumbnail img{
-width: 500px;
-height: auto;
+width: 100%;
+height: 100%;
 position: relative;
-left: -25%;
-top: -5%;
 }
 .thumbnail a{
 float: left;
@@ -265,9 +263,19 @@ float: right;
 .one {
 width:33.33%;
 }
+
+.space {
+width:5.0%;
+}
+
 .two {
 width: 66.66%;
 }
+
+.half{
+    width: 60.0%;
+}
+
 .three{
 width: 100%;
 }
